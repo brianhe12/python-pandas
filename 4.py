@@ -3,7 +3,7 @@
 import pandas as pd 
 
 cols = [3,4]
-df = pd.read_excel(r"C:\Users\david he\Desktop\analytics\coalpublic2013.xlsx",usecols=cols)
+df = pd.read_excel('coalpublic2013.xlsx')
 
 sum = (df.sum())
 print(sum)

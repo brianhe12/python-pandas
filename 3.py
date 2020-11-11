@@ -1,6 +1,6 @@
 # Write a Pandas program to read specific columns from a given excel file.
 import pandas as pd 
-df = pd.read_excel(r"C:\Users\david he\Desktop\analytics\coalpublic2013.xlsx")
+df = pd.read_excel('coalpublic2013.xlsx')
 
 # EX: Read only Column C and Column D
 # https://stackoverflow.com/questions/22394598/select-specific-csv-columns-filtering-python-pandas
