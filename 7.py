@@ -3,7 +3,9 @@
 import pandas as pd 
 df = pd.read_excel('coalpublic2013.xlsx')
 
-print(df)
-# production_sum = df.sum(level='Production')
+production_sum = df['Production'].sum()
+labor_sum = df['Labor_Hours'].sum()
 
-# print(production_sum)
+df.loc['Total'] = pd.Series([production_sum,labor_sum],index=['Production','Labor_Hours'])
+
+print(df)
